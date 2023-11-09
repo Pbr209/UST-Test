@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="searchForm">
+    <input type="text" formControlName="query" placeholder="Enter a keyword" />
+    <button type="submit">Search</button>
+  </form>
+
+  <app-quote-list [quotes]="quoteData"></app-quote-list>
+  
